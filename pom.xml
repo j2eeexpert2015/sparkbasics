@@ -16,13 +16,14 @@
     
 	<dependencies>
 		<!-- Scala lang, spark core and spark sql are all scoped as provided as spark-submit will provide these -->
-		<!-- Spark dependency -->
+		<!-- Spark dependency 
         <dependency>
             <groupId>org.scala-lang</groupId>
             <artifactId>scala-library</artifactId>
             <version>${scala.version}</version>
             <scope>provided</scope>
         </dependency>
+        -->
         <dependency>
             <groupId>org.apache.spark</groupId>
             <artifactId>spark-core_${scala.compat.version}</artifactId>
