@@ -4,7 +4,9 @@ import org.apache.spark.sql.SparkSession
 
 object DataframeBasics {
 
-  val spark: SparkSession = SparkSession.builder()
+   
+  def main(args: Array[String]) {
+     val spark: SparkSession = SparkSession.builder()
     .master("local[1]")
     .appName("SparkByExamples.com")
     .getOrCreate()
@@ -15,4 +17,6 @@ object DataframeBasics {
   val data = Seq(("Java", "20000"), ("Python", "100000"), ("Scala", "3000"))
   val df = data.toDF(columns: _*)
   df.show()
+
+  }
 }
